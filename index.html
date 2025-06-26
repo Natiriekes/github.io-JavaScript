@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre Mim - Natália</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6db3f2 0%, #a84c91 100%);
+      color: #333;
+      min-height: 100%;
+      line-height: 1.6;
+    }
+
+    body {
+      overflow-x: hidden;
+      padding: 20px;
+      background-attachment: fixed;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: rgba(255, 255, 255, 0.98);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      position: relative;
+      z-index: 2;
+      backdrop-filter: blur(5px);
+    }
+
+    h1 {
+      color: #a84c91;
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 10px;
+      background: linear-gradient(to right, #a84c91, #6db3f2);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      display: block;
+      margin: 30px auto;
+      object-fit: cover;
+      border: 5px solid #fff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-top: 35px;
+      font-size: 1.8rem;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(to right, #a84c91, #6db3f2);
+      border-radius: 3px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 8px 0;
+      padding-left: 30px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #a84c91;
+      font-weight: bold;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .social a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 12px 25px;
+      border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .social a:first-child {
+      background: linear-gradient(45deg, #a84c91, #e84393);
+    }
+
+    .social a:last-child {
+      background: linear-gradient(45deg, #6db3f2, #1e90ff);
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 20% 30%, rgba(168, 76, 145, 0.1) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 70%, rgba(109, 179, 242, 0.1) 0%, transparent 50%);
+      z-index: -1;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 25px;
+        margin: 20px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .profile-img {
+        width: 180px;
+        height: 180px;
+      }
+
+      .social {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .social a {
+        width: 80%;
+        text-align: center;
+      }
+    }
+
+    section {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: rgba(255,255,255,0.9);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #a84c91;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c75ca8;
+    }
+
+    #meuParagrafo {
+      color: #333;
+      font-size: 16px;
+    }
+
+    #minhaImagem {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Olá! Meu nome é Natália</h1>
+    <img class="profile-img" src="https://img.freepik.com/fotos-premium/menina-linda-e-cacheada-em-um-espaco-cinza-claro_277459-69.jpg" alt="Foto de Natália">
+
+    <h2>Idade</h2>
+    <p>Tenho 17 anos.</p>
+
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Dançar</li>
+      <li>Ouvir música</li>
+      <li>Ler</li>
+      <li>Fazer experiências científicas</li>
+    </ul>
+
+    <h2>Meus interesses</h2>
+    <p>Sou apaixonada por exatas, especialmente matemática e química. Gosto de consertar coisas e ajudar os outros. Também tenho muito interesse em estudar no exterior e contribuir com causas sociais.</p>
+
+    <h2>Redes Sociais</h2>
+    <div class="social">
+      <a href="https://www.instagram.com/natiriekes" target="_blank">Instagram</a>
+      <a href="https://snapchat.com/t/b9zCG7Ir" target="_blank">Snapchat</a>
+    </div>
+
+    <!-- INTERATIVIDADE COMBINADA -->
+    <section>
+      <h2>Interatividade com JavaScript 🧠✨</h2>
+      <p id="meuParagrafo">Clique nos botões abaixo para ver mágica acontecer!</p>
+      <button onclick="alterarEstilo(); mostrarDataHora(); trocarImagem();">Clique e Transforme Tudo</button>
+      <p id="dataHora" style="margin-top: 15px;"></p>
+      <img id="minhaImagem" src="https://via.placeholder.com/200x150?text=Imagem+1" alt="Imagem 1">
+    </section>
+  </div>
+
+  <script>
+    function alterarEstilo() {
+      const p = document.getElementById("meuParagrafo");
+      p.style.color = "#a84c91";
+      p.style.fontSize = "22px";
+      p.style.fontWeight = "bold";
+      p.style.fontStyle = "italic";
+    }
+
+    function mostrarDataHora() {
+      const agora = new Date();
+      const paragrafo = document.getElementById("dataHora");
+      paragrafo.textContent = "Data e hora atual: " + agora.toLocaleString();
+    }
+
+    let imagemAtual = 1;
+    function trocarImagem() {
+      const img = document.getElementById("minhaImagem");
+      if (imagemAtual === 1) {
+        img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStsm-Qq3Qf8AddAmvDBX1pM12Eeo1-6qIKSg&usqp=CAU";
+        img.alt = "Imagem 2";
+        imagemAtual = 2;
+      } else {
+        img.src = "https://thumbs.dreamstime.com/b/retrato-do-bebe-crianca-infantil-feliz-menino-de-sorriso-bonito-da-113556662.jpg";
+        img.alt = "Imagem 1";
+        imagemAtual = 1;
+      }
+    }
+  </script>
+
+</body>
+</html>
+
